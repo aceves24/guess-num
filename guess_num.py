@@ -2,8 +2,12 @@
 # 讓使用者重複輸入數字去猜
 # 猜對的話  印出"終於猜對了! "
 # 猜錯的話  要告訴他 比答案大/小
-import random                 
-r = random.randint(1, 100)    
+import random
+start = input("請決定開始值: ")
+end = input("請決定結束值: ")
+start = int(start)
+end = int(end)                 
+r = random.randint(start, end)    
 count = 0
 while True:
 	count += 1
